@@ -6,6 +6,20 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <DebugType>embedded</DebugType>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    <Version>1.0.0</Version>
+    <Company>Excel2SQL</Company>
+    <Product>Excel2SQL导入工具</Product>
+    <Description>Excel/CSV数据导入MySQL工具</Description>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +27,11 @@
     <PackageReference Include="MySql.Data" Version="8.3.0" />
     <PackageReference Include="EPPlus" Version="7.0.8" />
     <PackageReference Include="CsvHelper" Version="31.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Windows.Forms" />
+    <TrimmerRootAssembly Include="System.Windows.Forms" />
   </ItemGroup>
 
 </Project> 
